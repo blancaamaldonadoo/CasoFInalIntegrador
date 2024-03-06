@@ -1,32 +1,32 @@
 package Habitats;
 
-public class HabitatTerrestre extends Habitat{
+public class HabitatAcuatico extends Habitast{
 
-    boolean puede_caminar;
+    boolean puede_nadar;
 
-    public HabitatTerrestre(float temperatura, float humedad, boolean limpieza, boolean puede_caminar){
+    public HabitatAcuatico(float temperatura, float humedad, boolean limpieza, boolean puede_nadar){
         super(temperatura, humedad, limpieza);
-        this.puede_caminar = puede_caminar;
+        this.puede_nadar = puede_nadar;
     }
 
-    public boolean puedeCaminar(){
-        return puede_caminar;
+    public boolean puedeNadar(){
+        return puede_nadar;
     }
 
-    public void setPuedeCaminar(boolean puede_caminar){
-        this.puede_caminar = puede_caminar;
+    public void setPuedeNadar(boolean puede_nadar){
+        this.puede_nadar = puede_nadar;
     }
 
     public String toString(){
-        return "terrestres";
+        return "acuaticos";
     }
 
-    public boolean getPuedeCaminar(){
-        return puede_caminar;
+    public boolean getPuedeNadar(){
+        return puede_nadar;
     }
 
-    public void setPuedeCaminar(boolean puede_caminar){
-        this.puede_caminar = puede_caminar;
+    public void setPuedeNadar(boolean puede_nadar){
+        this.puede_nadar = puede_nadar;
     }
 
     public float getTemperatura(){
@@ -52,6 +52,4 @@ public class HabitatTerrestre extends Habitat{
     public void setLimpieza(boolean limpieza){
         this.limpieza = limpieza;
     }
-    
-
 }

@@ -38,7 +38,24 @@ public class Habitat{
 
     @Override
     public String toString(){
-        return "Temperatura: " + temperatura + " Humedad: " + humedad + " Limpieza: " + limpieza;
+        return "Temperatura" ;
     }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        return super.equals(obj);
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+
+    
 
 }
