@@ -48,5 +48,6 @@ public class Visitantes{
         this.tipoVisitante = tipoVisitante;
     }
 
+    
 }
 
