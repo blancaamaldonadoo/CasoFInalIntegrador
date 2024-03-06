@@ -1,6 +1,6 @@
 package Habitats;
 
-public class HabitatAcuatico extends Habitast{
+public class HabitatAcuatico extends Habitasts{
 
     boolean puede_nadar;
 
@@ -17,8 +17,27 @@ public class HabitatAcuatico extends Habitast{
         this.puede_nadar = puede_nadar;
     }
 
+    @Override
     public String toString(){
-        return "acuaticos";
+        return "HabitatAcuatico";
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        return super.equals(obj);
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+
+    public void comprobarNadar(){
+        if(puede_nadar == true){
+            System.out.println("El animal " + nombre " puede nadar");
+        }else{
+            System.out.println("El animal " + nombre+ " no puede nadar");
+        }
     }
 
     public boolean getPuedeNadar(){
