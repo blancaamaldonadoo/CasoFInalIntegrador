@@ -1,4 +1,4 @@
-package visitantes;
+package ZOOLOGICO.Visitantes;
 
 public class Visitantes{
 

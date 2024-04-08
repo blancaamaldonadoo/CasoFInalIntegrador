@@ -1,4 +1,4 @@
-package Habitats;
+package ZOOLOGICO.Habitats;
 
 public class Habitat{
 
@@ -28,8 +28,9 @@ public class Habitat{
         return humedad;
     }
 
-    public boolean estaLimpio(){
-        return limpieza;
+    public String estaLimpio(){
+        if(limpieza) return "está limpio";
+        else return "está sucio";
     }
 
     public void setLimpieza(boolean limpieza){
@@ -38,22 +39,10 @@ public class Habitat{
 
     @Override
     public String toString(){
-        return "Temperatura" ;
-    }
-
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
-
-    @Override
-    public boolean equals(Object obj){
-        return super.equals(obj);
-    }
-
-    @Override
-    protected void finalize() throws Throwable {
-        super.finalize();
+        String texto="Habitat: ";
+        texto+= "limpieza: "+estaLimpio() + " \n";
+        texto+= "Temperatura: "+temperatura+"\n Humedad: "+humedad ;
+        return texto;
     }
 
     

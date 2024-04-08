@@ -1,5 +1,5 @@
 
-package Animales;
+package ZOOLOGICO.Animales;
 
 public class Animales{
     String nombre;
@@ -68,35 +68,29 @@ public class Animales{
         this.alimentacion = alimentacion;
     }
 
-    public void buenaSalud(boolean salud){
+    public String buenaSalud(boolean salud){
         if(salud == true){
-            System.out.println("El animal " + nombre + "se encuentra en buen estado de salud");
-            else System.out.println("El animal " + nombre + "se encuentra en mal estado de salud");
+            return "El animal " + nombre + "se encuentra en buen estado de salud";
+        }
+        else return "El animal " + nombre + "se encuentra en mal estado de salud";
     }
 
-    public void buenComportamiento(boolean comportamiento){
+    public String buenComportamiento(boolean comportamiento){
         if(comportamiento == true){
-            System.out.println("El animal " + nombre + "se encuentra en buen estado de comportamiento");
-            else System.out.println("El animal " + nombre + "se encuentra en mal estado de comportamiento");
+            return "El animal " + nombre + "se encuentra en buen estado de comportamiento";
+        }
+        else return "El animal " + nombre + "se encuentra en mal estado de comportamiento";
     }
-
-    //método para registrar el nombre
-    public void registrarNombre(String nombre){
-        System.out.println("El nombre del animal es: " + nombre);
-    }
-
-    //método para regustrar la alimentacion
-
-    public void registrarAlimentacion(String alimentacion){
-        System.out.println("El animal " + nombre + " se alimenta de: " + alimentacion);
-    }
-
-    public void registrarComportamiento(boolean comportamiento){
-        System.out.println("El animal " + nombre + " tiene un comportamiento: " + buenComportamiento(comportamiento));
-    }
-
-    public void registrarSalud(boolean salud){
-        System.out.println("El animal " + nombre + " tiene un estado de salud: " + buenaSalud(salud));
+    
+    public String toString(){
+        String texto= "";
+        texto+= "Nombre: " + nombre + "\n";
+        texto+= "Especie: " + especie + "\n";
+        texto+= "ID: " + id + "\n";
+        texto+= "Salud: " + buenaSalud(getSalud()) + "\n";
+        texto+= "Comportamiento: " + buenComportamiento(getComportamiento()) + "\n";
+        texto+= "Alimentacion: " + alimentacion + "\n";
+        return texto;
     }
 
 }
