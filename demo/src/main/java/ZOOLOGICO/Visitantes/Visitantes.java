@@ -48,6 +48,15 @@ public class Visitantes{
         this.tipoVisitante = tipoVisitante;
     }
 
+    public void crearTour(){
+        if(tipoVisitante.equals("Niño")){
+           
+        }
+
+        if(tipoVisitante.equals("Adulto")){
+            
+        }
+    }
     
 }
 

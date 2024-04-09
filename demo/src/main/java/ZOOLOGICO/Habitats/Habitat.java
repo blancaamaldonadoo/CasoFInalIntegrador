@@ -45,6 +45,9 @@ public class Habitat{
         return texto;
     }
 
-    
-
+    public void modificarHabitat(float temperatura, float humedad, boolean limpieza){
+        this.temperatura = temperatura;
+        this.humedad = humedad;
+        this.limpieza = limpieza; 
+    }
 }

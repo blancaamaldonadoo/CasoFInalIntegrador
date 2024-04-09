@@ -18,6 +18,9 @@ public class Animales{
         this.alimentacion = alimentacion;
     }
 
+    public Animales(){}
+
+
     //GETTERS Y SETTERS:
 
     public String getNombre(){
